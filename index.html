@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>発航順</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="GA.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>発航順自動化</h1>
+    <div class="container">
+        <div class="input-section">
+            <label for="seniors">上級生（改行区切り）:</label><br>
+            <textarea id="seniors" rows="5" cols="30"></textarea><br><br>
+
+            <label for="juniors">下級生（改行区切り）:</label><br>
+            <textarea id="juniors" rows="5" cols="30"></textarea><br><br>
+
+            <button onclick="generateInputTable()">入力用の表を表示</button><br><br>
+
+            <div id="input-table"></div><br><br>
+
+            <button onclick="runGeneticAlgorithm()">最適な順番を生成</button>
+        </div>
+        <div class="output-section" id="result"></div>
+    </div>
+</body>
+</html>
